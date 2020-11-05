@@ -1,0 +1,17 @@
+{
+  {
+    "Name": "Flashlight",
+    "Maximum": 4,
+    "MultiplePerPerson": false,
+    "Incompatabilities": [
+      "Strong Flashlight"
+    ]
+  },
+  {
+    "Name": "Photo Camera",
+    "Maximum": 4,
+    "MultiplePerPerson": true,
+    "Incompatabilities": [
+    ]
+  },
+}

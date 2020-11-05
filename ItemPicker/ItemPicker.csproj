@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <StartupObject>ItemPicker.Program</StartupObject>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="ItemList.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="ItemList.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="ItemPicker.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+  </ItemGroup>
+
+</Project>
