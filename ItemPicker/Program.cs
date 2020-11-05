@@ -7,21 +7,14 @@ namespace ItemPicker
     {
         static void Main(string[] args)
         {
-            var itemReader = new ItemReader();
-            var items = itemReader.GetItems();
-
-
-
             var picker = new ItemPicker();
             var playerNames = new List<string> 
             {
                 "Fluff",
-                "Lumi",
-                "Gris",
-                "George"
+                "Lumi"
             };
-            var numberOfItems = 3;
-            var players = picker.GetPlayerItems(playerNames, numberOfItems);
+            var numberOfItems = 4;
+            var players = picker.GetPlayerItems(playerNames, numberOfItems, false);
             foreach(var player in players)
             {
                 Console.WriteLine(player.GetPlayerItemString());

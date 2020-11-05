@@ -7,17 +7,15 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="ItemList.json" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Resource Include="ItemList.json" />
-  </ItemGroup>
-
-  <ItemGroup>
     <Compile Update="ItemPicker.cs">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="ItemList.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 </Project>
