@@ -13,7 +13,7 @@ namespace ItemPicker
         public List<Item> GetItems()
         {
             var jsonPath = Path.Combine(Directory.GetCurrentDirectory(), "ItemList.json");
-            var sr = new StreamReader(new FileStream(jsonPath, FileMode.Open, FileAccess.Read, FileShare.Delete));
+            using var sr = new StreamReader(new FileStream(jsonPath, FileMode.Open, FileAccess.Read, FileShare.Delete));
             return JsonSerializer.Deserialize<List<Item>>(sr.ReadToEnd());
         }
     }

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace ItemPicker
@@ -19,9 +20,9 @@ namespace ItemPicker
         {
             var sb = new StringBuilder();
             sb.Append($"{Name}: ");
-            foreach(var item in Items)
+            foreach(var item in Items.OrderBy(x => x.Name)
             {
-                sb.Append(item.Name + " ");
+                sb.Append(item.Name + ", ");
             }
             return sb.ToString();
         }
