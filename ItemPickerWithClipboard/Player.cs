@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace ItemPicker
+namespace ItemPickerWithClipboard
 {
     public class Player
     {
