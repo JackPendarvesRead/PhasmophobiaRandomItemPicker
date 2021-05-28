@@ -6,10 +6,38 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:vm="clr-namespace:PhasmophobiaRandomItemPicker.ViewModel"
+    xmlns:view="clr-namespace:PhasmophobiaRandomItemPicker.View"
     xmlns:rui="http://reactiveui.net"
     Title="FluffyModManager" Height="600" Width="800"
     mc:Ignorable="d">
     <Grid Margin="12">
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0" Orientation="Horizontal">
+            <Button>Button</Button>
+            <Button>Button</Button>
+            <Button>Button</Button>
+            <Button>Button</Button>
+        </StackPanel>
+        <StackPanel Grid.Row="1">
+            <view:PlayerView></view:PlayerView>
+            <view:PlayerView></view:PlayerView>
+            <view:PlayerView></view:PlayerView>
+            <view:PlayerView></view:PlayerView>
+        </StackPanel>
+        <!--<ListBox x:Name="PlayerListBox" 
+                 Grid.Row="1" 
+                 HorizontalContentAlignment="Stretch"
+                 ScrollViewer.HorizontalScrollBarVisibility="Disabled">
+            <ListBox.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <UniformGrid HorizontalAlignment="Left" 
+                                 VerticalAlignment="Top"
+                                 Columns="1" />
+                </ItemsPanelTemplate>
+            </ListBox.ItemsPanel>
+        </ListBox>-->
     </Grid>
 </rui:ReactiveWindow>

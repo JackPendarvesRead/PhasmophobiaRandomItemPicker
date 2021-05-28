@@ -2,10 +2,7 @@
 using ReactiveUI;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Reactive.Disposables;
 using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -19,20 +16,13 @@ using System.Windows.Shapes;
 namespace PhasmophobiaRandomItemPicker.View
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for PlayerView.xaml
     /// </summary>
-    public partial class MainWindow : ReactiveWindow<MainWindowViewModel>
+    public partial class PlayerView : ReactiveUserControl<PlayerViewViewModel>
     {
-        public MainWindow()
+        public PlayerView()
         {
             InitializeComponent();
-            this.WhenActivated(disposables =>
-            { 
-                this.OneWayBind(ViewModel,
-                    vm => vm.PlayerViewVMs,
-                    view => view.PlayerListBox.ItemsSource
-                    ).DisposeWith(disposables);               
-            });
         }
     }
 }

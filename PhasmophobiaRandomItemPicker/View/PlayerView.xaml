@@ -1,0 +1,22 @@
+﻿<rui:ReactiveUserControl
+  x:Class="PhasmophobiaRandomItemPicker.View.PlayerView"
+  x:TypeArguments="vm:PlayerViewViewModel"
+  xmlns:vm="clr-namespace:PhasmophobiaRandomItemPicker.ViewModel"
+  xmlns:rui="http://reactiveui.net"
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+
+        <StackPanel Orientation="Horizontal">
+            <TextBlock Text="Name: " FontWeight="Bold" FontFamily="Arial" />
+            <TextBox MinWidth="200" FontFamily="Arial" />
+        </StackPanel>
+        <StackPanel Grid.Row="1">
+            
+        </StackPanel>
+    </Grid>
+</rui:ReactiveUserControl>
