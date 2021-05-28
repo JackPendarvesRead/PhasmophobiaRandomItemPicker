@@ -1,11 +1,9 @@
-﻿using Newtonsoft.Json;
-using System;
+﻿using ItemPickerWithClipboard.Infrastructure;
+using Newtonsoft.Json;
 using System.Collections.Generic;
 using System.IO;
-using System.Reflection;
-using System.Text;
 
-namespace ItemPickerWithClipboard
+namespace ItemPickerWithClipboard.Logic
 {
     public class ItemReader
     {

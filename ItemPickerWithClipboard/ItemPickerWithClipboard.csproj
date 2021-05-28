@@ -47,13 +47,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AppSettingsReader.cs" />
-    <Compile Include="Item.cs" />
-    <Compile Include="ItemPicker.cs">
+    <Compile Include="AppSettings.cs" />
+    <Compile Include="Infrastructure\Item.cs" />
+    <Compile Include="Logic\ItemPicker.cs">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Compile>
-    <Compile Include="ItemReader.cs" />
-    <Compile Include="Player.cs" />
+    <Compile Include="Logic\ItemReader.cs" />
+    <Compile Include="Infrastructure\Player.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

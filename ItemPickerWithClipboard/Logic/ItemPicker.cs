@@ -1,9 +1,9 @@
-﻿using System;
+﻿using ItemPickerWithClipboard.Infrastructure;
+using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 
-namespace ItemPickerWithClipboard
+namespace ItemPickerWithClipboard.Logic
 {
     public class ItemPicker
     {

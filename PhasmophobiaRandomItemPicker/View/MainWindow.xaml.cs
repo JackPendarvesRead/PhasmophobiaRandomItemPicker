@@ -27,11 +27,7 @@ namespace PhasmophobiaRandomItemPicker.View
         {
             InitializeComponent();
             this.WhenActivated(disposables =>
-            { 
-                this.OneWayBind(ViewModel,
-                    vm => vm.PlayerViewVMs,
-                    view => view.PlayerListBox.ItemsSource
-                    ).DisposeWith(disposables);               
+            {                           
             });
         }
     }

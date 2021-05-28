@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace ItemPickerWithClipboard
+namespace ItemPickerWithClipboard.Infrastructure
 {
     public class Player
     {
@@ -20,9 +20,11 @@ namespace ItemPickerWithClipboard
         {
             var sb = new StringBuilder();
             sb.Append($"{Name}: ");
-            foreach(var item in Items.OrderBy(x => x.Name))
+            var orderedItems = Items.OrderBy(x => x.Name).ToList();
+            for(var i = 0; i < orderedItems.Count; ++i)
             {
-                sb.Append(item.Name + ", ");
+                sb.Append(orderedItems[i].Name);
+                sb.Append(i < orderedItems.Count - 1 ? ", " : ".");
             }
             return sb.ToString();
         }

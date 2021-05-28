@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace ItemPickerWithClipboard
+namespace ItemPickerWithClipboard.Infrastructure
 {
     public class Item
     {
