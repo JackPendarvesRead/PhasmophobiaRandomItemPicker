@@ -1,0 +1,15 @@
+﻿<rui:ReactiveWindow 
+    x:Class="PhasmophobiaRandomItemPicker.View.MainWindow"
+    x:TypeArguments="vm:MainWindowViewModel"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:vm="clr-namespace:PhasmophobiaRandomItemPicker.ViewModel"
+    xmlns:rui="http://reactiveui.net"
+    Title="FluffyModManager" Height="600" Width="800"
+    mc:Ignorable="d">
+    <Grid Margin="12">
+        
+    </Grid>
+</rui:ReactiveWindow>
