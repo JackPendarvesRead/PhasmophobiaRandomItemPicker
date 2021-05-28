@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PhasmophobiaRandomItemPicker.Infrastructure;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Reflection;
@@ -6,7 +7,7 @@ using System.Text;
 using System.Text.Json;
 using static System.Net.Mime.MediaTypeNames;
 
-namespace ItemPicker
+namespace PhasmophobiaRandomItemPicker.Logic
 {
     public class ItemReader
     {

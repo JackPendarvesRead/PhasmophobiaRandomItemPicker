@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace ItemPicker
+namespace PhasmophobiaRandomItemPicker.Infrastructure
 {
     public enum ItemEnum
     {

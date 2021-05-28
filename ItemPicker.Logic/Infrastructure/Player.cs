@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace ItemPicker
+namespace ItemPicker.Logic.Infrastructure
 {
     public class Player
     {

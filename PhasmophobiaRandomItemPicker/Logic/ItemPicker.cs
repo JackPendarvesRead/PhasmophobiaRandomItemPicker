@@ -1,9 +1,10 @@
-﻿using System;
+﻿using PhasmophobiaRandomItemPicker.Infrastructure;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace ItemPicker
+namespace PhasmophobiaRandomItemPicker.Logic
 {
     public class ItemPicker
     {
